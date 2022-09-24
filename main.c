@@ -1,3 +1,5 @@
+// Released under MIT License.
+// Copyright (c) 2022 Ladislav Bartos
 
 #include <unistd.h>
 #include <groan.h>
