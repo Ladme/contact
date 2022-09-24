@@ -32,7 +32,7 @@ Use [groan selection language](https://github.com/Ladme/groan#groan-selection-la
 ## Example usage
 
 ```
-center -c md.gro -f md.xtc -a "resid 1 to 15 && name CA" -b "resid 16 to 30 && name CA" -u 0.2
+contact -c md.gro -f md.xtc -a "resid 1 to 15 && name CA" -b "resid 16 to 30 && name CA" -u 0.2
 ```
 
 This command will calculate contact matrix for two selections based on the trajectory `md.xtc` (every frame will be analyzed). Selection A will contain all atoms belonging to residues 1 to 15 and having the name CA (flag `-a`). Selection B will contain all atoms belonging to residues 16 to 30 and having the name CA (flag `-b`). Two atoms are to be considered to be in contact if they are closer to each other than 0.2 nm (flag `-u`). For each pair of atoms from selection A and selection B, the relative number of trajectory frames in which the two atoms have been in contact will be written out into `contacts.dat` (default option).
