@@ -47,7 +47,12 @@ SELECTION_B_ATOM_2       CONTACT_A1-B2        CONTACT_A2-B2        CONTACT_A3-B2
 ...
 ```
 
-`CONTACT_A?-B?` specifies the relative number (<0,1>) of trajectory frames in which the two concerned atoms have been in contact. 
+`CONTACT_A?-B?` specifies the relative number (<0,1>) of trajectory frames in which the two concerned atoms have been in contact.
+
+You can plot the contact matrix using the provided `contact_plot.py` script (requires python3 and matplotlib library):
+```
+python contact_plot.py contacts.dat
+```
 
 Plotted contact matrix can look for example like this:
 ![An example of a plotted contact matrix](examples/contact_matrix.png)
